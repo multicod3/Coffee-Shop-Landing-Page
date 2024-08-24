@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+    <img src="http" style="display:none" id="header-img">    
+    <div id="header-logo">Coffee</div>
+    <nav id="nav-bar">
+        <ul>
+            <li><a class="nav-link" href="#section1">About Coffee</a></li>
+            <li><a class="nav-link" href="#section2">Production Process</a></li>
+            <li><a class="nav-link" href="#section3">Shop</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <section id="section1">
+        <h2>About Our Coffee</h2>
+        <p>Our coffee beans are sourced from the finest plantations in Brazil and are shipped directly to you via state-of-the-art e-electronic drones. Experience the freshest coffee, delivered from farm to cup.</p>
+    </section>
+
+    <section id="section2">
+        <h2>How Our Coffee is Produced</h2>
+        <p>Our production process ensures that every bean is treated with the utmost care, from harvesting to roasting. Our methods are sustainable and designed to bring out the best flavors in every cup.</p>
+        <iframe id="video" src="https://www.youtube.com/embed/6skcgBvorDk" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="section3">
+    <div class="section3-left">
+        <h2>Shop Our Coffee</h2>
+    </div>
+    <div class="section3-right">
+        <div class="product-box">
+            <div class="product-image">
+                <img src="https://cafedujour.ie/media/catalog/product/cache/97d04581e31006cd8187ff385306064b/d/a/dark-roast-brazil.jpg" alt="Coffee Product 1">
+            </div>
+            <div class="product-info">
+                <h3>Brazilian Dark Roast</h3>
+                <p>$14.99 - A bold, rich coffee with deep flavors.</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="product-image">
+                <img src="coffee2.jpg" alt="Coffee Product 2">
+            </div>
+            <div class="product-info">
+                <h3>Colombian Medium Roast</h3>
+                <p>$12.99 - A smooth, balanced coffee with a hint of chocolate.</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="product-image">
+                <img src="coffee3.jpg" alt="Coffee Product 3">
+            </div>
+            <div class="product-info">
+                <h3>Ethiopian Light Roast</h3>
+                <p>$16.99 - A vibrant, fruity coffee with a complex flavor profile.</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <section id="form-section">
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+            <label for="email">Subscribe for updates:</label>
+            <input name="email" id="email" type="email" placeholder="Enter your email" required>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </section>
+
+</body>
+</html>
