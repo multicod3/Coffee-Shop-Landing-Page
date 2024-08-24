@@ -1,0 +1,207 @@
+/* General Section Styling */
+section {
+    padding: 60px 20px;
+    margin-top: 60px;
+    margin-bottom: 2rem; /* Gap between sections */
+}
+
+/* Header Styling */
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #6f4e37; /* Coffee-themed background */
+    color: #fff;
+    padding: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Georgia', serif; /* Optional, to make it look like a logo */
+    color: #fff;
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Video Styling */
+#video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Form Styling */
+#form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 20px 0;
+}
+
+#email {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#submit {
+    padding: 10px 20px;
+    background-color: #6f4e37; /* Coffee brown button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #4b2e2a; /* Darker coffee brown */
+}
+
+/* Section 1 Styling */
+#section1 {
+    background-color: #f5f5f5; /* Light background for contrast */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#section1 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#section1 p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Section 2 Styling */
+#section2 {
+    background-color: #e0d5c4; /* Coffee cream background */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#section2 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#section2 p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Section 3 Styling */
+#section3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem; /* Adds space between the two divisions */
+}
+
+.section3-left {
+    flex: 1 1 100%; /* Take full width for the heading */
+}
+
+.section3-right {
+    flex: 1 1 100%; /* Take full width for the product boxes */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 calc(30% - 2rem); /* Responsive scaling */
+    max-width: calc(30% - 2rem); /* Ensures boxes fit within the parent container */
+}
+
+.product-image {
+    margin-bottom: 15px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Ensures image fits within the box */
+    border-radius: 8px;
+}
+
+.product-info {
+    text-align: left; /* Align text to the left for better readability */
+}
+
+.product-info h3 {
+    margin: 10px 0;
+}
+
+.product-info p {
+    color: #333;
+}
+
+.product-info button {
+    padding: 10px 20px;
+    background-color: #6f4e37; /* Coffee brown button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.product-info button:hover {
+    background-color: #4b2e2a; /* Darker coffee brown */
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #nav-bar {
+        margin-top: 10px;
+    }
+
+    .product-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    #section3 {
+        flex-direction: column;
+    }
+}
