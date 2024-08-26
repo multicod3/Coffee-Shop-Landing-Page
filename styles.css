@@ -1,4 +1,4 @@
-/* General Section Styling - style v.2 TODO  */
+/* General Section Styling */
 section {
     padding: 60px 20px;
     margin-top: 60px;
@@ -7,18 +7,18 @@ section {
 
 /* Header Styling */
 #header {
-    position: fixed;
-    width: 100%;
+    
     top: 0;
     background-color: #6f4e37; /* Coffee-themed background */
     color: #fff;
-    padding: 20px;
+    padding: 40px;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    margin-top: 20px
 
+}
 #header-logo {
     font-size: 2rem;
     font-weight: bold;
